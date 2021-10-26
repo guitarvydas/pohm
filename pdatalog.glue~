@@ -1,0 +1,27 @@
+Program [@Statement] = [[
+from mercylog import R, V, and_, db\nfb = [ ${Statement}]
+ds = db()
+result = ds(fb)
+print(result.df()) ]]
+
+Statement_fact [clause kperiod] = [[${clause},\n]]
+Statement_rule [clause1 kcolondash clause @commaclause kdot] = [[${clause1} << and_(${clause}${commaclause}),\n]]
+
+Clause [predicate klpar idlist krpar] = [[${predicate}(${idlist})]]
+
+gen_1 [kcomma clause] = [[\,${clause}]]
+
+Predicate [lowercaseident] = [[R.${lowercaseident}]]
+gen_2 [id @commaid] = [[${id}${commaid}]]
+
+ID [id] = [[${id}]]
+CommaID [kcomma id] = [[\, ${id}]]
+
+Variable [capident] = [[V.${capident}]]
+Literal [lowercaseident] = [["${lowercaseident}"]]
+
+LowerCaseIdent [c @cs] = [[${c}${cs}]]
+
+CapitalizedIdent [c @cs] = [[${c}${cs}]]
+
+identRest [c] = [[${c}]]

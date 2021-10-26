@@ -3,12 +3,12 @@ datalog {
 Program = Statement+
 Statement =
     Clause "."                          -- fact
-  | Clause ":-" Clause gen_1* "."   -- rule
+  | Clause ":-" Clause Gen_1* "."   -- rule
 
 Clause = Predicate "(" IDList ")"
 
 Predicate = LowerCaseIdent
-IDList = ID gen_2*
+IDList = ID Gen_2*
 ID = Variable | Literal
 
 Variable = CapitalizedIdent
@@ -18,8 +18,8 @@ LowerCaseIdent = "a" .. "z" identRest*
 CapitalizedIdent = "A" .. "Z" identRest*
 
 identRest = "0-9" | "_" | "A" .. "Z" | "a" .. "z"
-gen_1 =  "," Clause
-gen_2 =  "," ID
+Gen_1 =  "," Clause
+Gen_2 =  "," ID
 
 }
 

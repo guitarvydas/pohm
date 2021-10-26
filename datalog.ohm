@@ -8,15 +8,15 @@ Clause = Predicate "(" IDList ")"
 CommaClause = "," Clause
 
 Predicate = LowerCaseIdent
-IDList = ID CommaID*
-ID = Variable | Literal
-CommaID = "," ID
+IDList = id CommaID*
+id = Variable | Literal
+CommaID = "," id
 
-Variable = CapitalizedIdent
-Literal = LowerCaseIdent
+variable = capitalizedIdent
+literal = lowerCaseIdent
 
-LowerCaseIdent = "a" .. "z" identRest*
-CapitalizedIdent = "A" .. "Z" identRest*
+lowerCaseIdent = "a" .. "z" identRest*
+capitalizedIdent = "A" .. "Z" identRest*
 
 identRest = "0-9" | "_" | "A" .. "Z" | "a" .. "z"
 }
