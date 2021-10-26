@@ -1,0 +1,9 @@
+var code;
+
+exports.resetCode = () => {
+    code = [];
+}
+
+exports.newCode = (s) => {
+    code.push (s);
+}

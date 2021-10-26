@@ -1,0 +1,12 @@
+parent(abe, bob).
+parent(abby, bob).
+parent(bob, carl).
+parent(bob, connor).
+parent(beatrice, carl).
+man(abe).
+man(bob).
+woman(abby).
+woman(beatrice).
+
+father(X, Y) :- man(X), parent(X, Y).
+father(X, Y).

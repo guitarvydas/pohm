@@ -1,7 +1,12 @@
 preprocess2 {
-  main =
+  top = stuff* "{" main "}" space*
+  main = 
     stuff* parenOp main  -- withparen
   | stuff*               -- withoutparen
   parenOp = "(" main ")"
-  stuff = ~"(" ~")" any
+  delim = "(" | ")" | "{" | "}"
+  stuff = ~delim (string | any)
+  string = quote (~quote any)* quote
+  quote = "\""
 }
+

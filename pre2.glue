@@ -1,4 +1,13 @@
+top [@front klb main krb @space] =
+  {{ support.resetCode (); }}
+  [[${front}{\n${main}${support.getCode()}\n}\n]]
+  
 main_withparen [@stuff parenOp main] = [[${stuff}${parenOp}${main}]]
 main_withoutparen [@stuff] = [[${stuff}]]
-parenOp [klp main krp] = [[${klp}${main}${krp}]]
+
+parenOp [klp main krp] = [[${support.newCode (main)}]]
+
+delim [c] = [[]]
 stuff [c] = [[${c}]]
+string [q1 @cs q2] = [[${q1}${cs}${q2}]]
+quote [c] = [[${c}]]
