@@ -7,9 +7,9 @@ Statement =
 Clause = Predicate "(" IDList ")"
 CommaClause = "," Clause
 
-Predicate = LowerCaseIdent
+Predicate = lowerCaseIdent
 IDList = id CommaID*
-id = Variable | Literal
+id = variable | literal
 CommaID = "," id
 
 variable = capitalizedIdent

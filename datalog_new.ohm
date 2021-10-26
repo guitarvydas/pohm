@@ -6,15 +6,15 @@ Statement =
 
 Clause = Predicate "(" IDList ")"
 
-Predicate = LowerCaseIdent
-IDList = ID [,ID]*
-ID = Variable | Literal
+Predicate = lowerCaseIdent
+IDList = id [,id]*
+id = variable | literal
 
-Variable = CapitalizedIdent
-Literal = LowerCaseIdent
+variable = capitalizedIdent
+literal = lowerCaseIdent
 
-LowerCaseIdent = "a" .. "z" identRest*
-CapitalizedIdent = "A" .. "Z" identRest*
+lowerCaseIdent = "a" .. "z" identRest*
+capitalizedIdent = "A" .. "Z" identRest*
 
 identRest = "0-9" | "_" | "A" .. "Z" | "a" .. "z"
 }

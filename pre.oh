@@ -1,9 +1,0 @@
-preprocess {
-  main = commaOp stuff* | stuff*
-  stuff = ~op any
-  op = "[,"
-  commaOp = op ident "]"
-  ident = idFirst idRest*
-  idFirst = "a" .. "z" | "A" .. "Z"
-  idRest = "0" .. "9" | "_" | idFirst
-}
