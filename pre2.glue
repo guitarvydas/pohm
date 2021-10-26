@@ -1,0 +1,4 @@
+main_withparen [@stuff parenOp main] = [[${stuff}${parenOp}${main}]]
+main_withoutparen [@stuff] = [[${stuff}]]
+parenOp [klp main krp] = [[${klp}${main}${krp}]]
+stuff [c] = [[${c}]]

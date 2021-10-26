@@ -1,0 +1,8 @@
+main_withcomma [@stuff commaOp main] = [[${stuff}${commaOp}${main}]]
+main_withoutcomma [@cs] = [[${cs}]]
+stuff [c] = [[${c}]]
+op [k] = [[${k}]]
+commaOp [k id k2] = [[${k}${id}${k2}]]
+ident [c @cs] = [[${c}${cs}]]
+idFirst [c] = [[${c}]]
+idRest [c] = [[${c}]]

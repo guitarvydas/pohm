@@ -1,0 +1,6 @@
+#!/bin/bash
+# pfr test.datalog datalog.ohm mercylog.glue
+# pfr test.datalog datalog3.ohm mercylog3.glue
+
+pfr datalog4.ohm pre.ohm pre.glue >preprocessed.ohm
+diff -b datalog.ohm preprocessed.ohm

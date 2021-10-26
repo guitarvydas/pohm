@@ -1,0 +1,28 @@
+datalog {
+Program = Statement+
+Statement =
+    Clause "."                          -- fact
+  | Clause ":-" Clause ( "," Clause)* "."   -- rule
+
+Clause = Predicate "(" IDList ")"
+
+Predicate = LowerCaseIdent
+IDList = ID ( "," ID)*
+ID = Variable | Literal
+
+Variable = CapitalizedIdent
+Literal = LowerCaseIdent
+
+LowerCaseIdent = "a" .. "z" identRest*
+CapitalizedIdent = "A" .. "Z" identRest*
+
+identRest = "0-9" | "_" | "A" .. "Z" | "a" .. "z"
+}
+
+
+
+
+
+
+
+
