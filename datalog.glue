@@ -14,14 +14,14 @@ CommaClause [kcomma clause] = [[\,${clause}]]
 Predicate [lowercaseident] = [[R.${lowercaseident}]]
 IDList [id @commaid] = [[${id}${commaid}]]
 
-ID [id] = [[${id}]]
+id [id] = [[${id}]]
 CommaID [kcomma id] = [[\, ${id}]]
 
-Variable [capident] = [[V.${capident}]]
-Literal [lowercaseident] = [["${lowercaseident}"]]
+variable [capident] = [[V.${capident}]]
+literal [lowercaseident] = [["${lowercaseident}"]]
 
-LowerCaseIdent [c @cs] = [[${c}${cs}]]
+lowerCaseIdent [c @cs] = [[${c}${cs}]]
 
-CapitalizedIdent [c @cs] = [[${c}${cs}]]
+capitalizedIdent [c @cs] = [[${c}${cs}]]
 
 identRest [c] = [[${c}]]
