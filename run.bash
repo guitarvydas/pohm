@@ -1,7 +1,7 @@
 #!/bin/bash
-# orignal datalog->python syntax
+# original datalog->python syntax
 echo
-echo '*** orignal datalog->python syntax'
+echo '*** original datalog->python syntax'
 pfr test.datalog datalog.ohm datalog.glue
 
 echo
