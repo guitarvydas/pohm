@@ -138,6 +138,10 @@ The preprocessing steps are contained in files `pre.ohm`, `pre.glue`, `pre2.ohm`
 
 The other project uses Python with a datalog-like layer on top. Our new syntax is based on `datalog` but is completely maleable and fits over top of our Python libraries.
 
+# Appendix Glue
+
+https://guitarvydas.github.io/2021/04/11/Glue-Tool.html
+
 # Authors
 
 Rajiv Abraham
