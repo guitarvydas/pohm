@@ -142,6 +142,10 @@ The other project uses Python with a datalog-like layer on top. Our new syntax i
 
 https://guitarvydas.github.io/2021/04/11/Glue-Tool.html
 
+# Appendix PFR
+
+https://guitarvydas.github.io/2021/10/14/PFR-and-PF.html
+
 # Authors
 
 Rajiv Abraham
